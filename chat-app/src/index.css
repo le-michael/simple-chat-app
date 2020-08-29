@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  @keyframes grow {
+    from {
+        height: 30px;
+    }
+    to {
+        height: 750px;
+    }
+  }
+
+.app {
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+#message-area {
+    animation: 0.75s ease-out 0s 1 grow;
+    height: 750px;
+    border-bottom: 1px solid lightgray;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+.text-area {
+    padding-top: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0;
+    resize: none;
+    overflow: hidden;
+    height: auto;
+    font-size: medium;
+}
+
+input:focus {
+    display: block;
+    outline: none;
+}
+
+.message-block {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: medium;
+    margin-bottom: 0px;
+    overflow-wrap: break-word;
+}
+
+.request-name-text {
+  margin-bottom: 25px;
+}
