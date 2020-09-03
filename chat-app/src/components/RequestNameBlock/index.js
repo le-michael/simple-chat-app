@@ -13,9 +13,9 @@ function RequestNameBlock({ setName }) {
 
   return (
     <div>
-      <p className="request-name-text">
+      <div className="request-name-text">
         <b>Please enter a display name</b>
-      </p>
+      </div>
       <input
         type="text"
         className="text-input"
