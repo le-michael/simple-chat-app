@@ -22,7 +22,7 @@ function ChatRoom({ name }) {
       setMessage("");
     }
   };
-  
+
   const updateMessageList = (message) => {
     // [{name: "Michael", message: "Hello"}, {name: "Victoria", message: "Hey!"}]
     setMessageList((messageList) => [...messageList, message]);
@@ -31,6 +31,7 @@ function ChatRoom({ name }) {
   useEffect(scrollToBottom, [messageList]);
 
   useEffect(() => {
+    socket.emit("new-user", name);
     socket.on("new-message", (message) => updateMessageList(message));
     return () => {
       socket.off("new-message", (message) => updateMessageList(message));
