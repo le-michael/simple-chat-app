@@ -1,6 +1,53 @@
 html {
   box-sizing: border-box;
 }
+
+/* App styles. Container that surronds message area and text area */
+.app {
+  padding: 10px;
+}
+
+/* Message area styles. Area where messages are displayed */
+#message-area {
+  height: 80vh;
+  overflow-y: auto;
+  padding: 5px;
+}
+
+.message-block {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: medium;
+  margin-bottom: 0px;
+  overflow-wrap: break-word;
+}
+
+/* Text area styles. Area where text input is taken */
+.text-area {
+}
+
+.text-input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  resize: none;
+  overflow: hidden;
+  height: auto;
+  font-size: medium;
+}
+
+.text-input:focus {
+  display: block;
+  outline: none;
+}
+
+/* Request name block styles. The request name block that pops up. */
+.request-name-text {
+  margin-bottom: 25px;
+}
+
+/* Don't worry about CSS below */
+
 *,
 *:before,
 *:after {
@@ -25,44 +72,4 @@ html {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-.app {
-  padding: 10px;
-}
-
-#message-area {
-  height: 80vh;
-  overflow-y: auto;
-  padding: 5px;
-}
-
-.text-area {
-}
-
-.text-input {
-  display: block;
-  width: 100%;
-  padding: 0;
-  resize: none;
-  overflow: hidden;
-  height: auto;
-  font-size: medium;
-}
-
-.text-input:focus {
-  display: block;
-  outline: none;
-}
-
-.message-block {
-  padding: 5px;
-  border-radius: 5px;
-  font-size: medium;
-  margin-bottom: 0px;
-  overflow-wrap: break-word;
-}
-
-.request-name-text {
-  margin-bottom: 25px;
 }

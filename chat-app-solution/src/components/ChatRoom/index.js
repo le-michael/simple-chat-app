@@ -22,6 +22,7 @@ function ChatRoom({ name }) {
       setMessage("");
     }
   };
+  
   const updateMessageList = (message) => {
     // [{name: "Michael", message: "Hello"}, {name: "Victoria", message: "Hey!"}]
     setMessageList((messageList) => [...messageList, message]);
