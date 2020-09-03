@@ -40,7 +40,7 @@ html {
 }
 
 .app {
-  width: 500px;
+  width: 750px;
   margin: auto;
   margin-top: 100px;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
@@ -81,6 +81,15 @@ html {
   font-size: medium;
   margin-bottom: 0px;
   overflow-wrap: break-word;
+}
+
+.message-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-timestamp {
+  font-size: small;
 }
 
 .request-name-text {

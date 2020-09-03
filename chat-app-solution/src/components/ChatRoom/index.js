@@ -17,7 +17,8 @@ function ChatRoom({ name }) {
 
   const sendMessage = (e) => {
     if (e.key === "Enter" && message !== "") {
-      socket.emit("new-message", { name, message });
+      const time = new Date().toLocaleTimeString();
+      socket.emit("new-message", { name, time, message });
       setMessage("");
     }
   };
